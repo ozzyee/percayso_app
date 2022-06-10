@@ -1,0 +1,66 @@
+.gridLayoutContainer {
+	width: 100vw;
+	height: 82h;
+	display: grid;
+	grid-template-areas:
+		"gridContainer1"
+		"gridContainer2"
+		"gridContainer3"
+		"gridContainer4"
+		"gridContainer5";
+	gap: 20px;
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2.5em;
+}
+
+.gridContainer1 {
+	grid-area: gridContainer1;
+	position: relative;
+	cursor: pointer;
+}
+
+.gridContainer2 {
+	grid-area: gridContainer2;
+	position: relative;
+	cursor: pointer;
+}
+
+.gridContainer3 {
+	grid-area: gridContainer3;
+	position: relative;
+	cursor: pointer;
+}
+
+.gridContainer4 {
+	grid-area: gridContainer4;
+	position: relative;
+	cursor: pointer;
+}
+
+.gridContainer5 {
+	grid-area: gridContainer5;
+	position: relative;
+	cursor: pointer;
+}
+
+@media (min-width: 768px) {
+	.gridLayoutContainer {
+		width: 95vw;
+		grid-template-areas:
+			"gridContainer1 gridContainer5 "
+			"gridContainer2 gridContainer5 "
+			"gridContainer3 gridContainer4 ";
+	}
+}
+
+@media (min-width: 992px) {
+	.gridLayoutContainer {
+		margin-top: 5em;
+		width: 95vw;
+		grid-template-areas:
+			"gridContainer1 gridContainer5 gridContainer5 gridContainer3"
+			"gridContainer2 gridContainer5 gridContainer5 gridContainer4";
+	}
+}

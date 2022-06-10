@@ -1,0 +1,35 @@
+.cardLayout {
+	margin: 0;
+	margin-top: 1.5em;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.heaing {
+	margin-left: 1.5em;
+	margin-top: 1.5em;
+	padding-top: 1em;
+	color: #023047;
+}
+
+@media (min-width: 768px) {
+	.cardLayout {
+		margin: 2.5em;
+		margin-top: 1.5em;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	.heaing {
+		/* margin-top: 0.5em; */
+		margin-left: 1.5em;
+	}
+}
+
+@media (min-width: 1127px) {
+	.heaing {
+		margin-top: 2.5em;
+		padding-top: 0em;
+	}
+}
